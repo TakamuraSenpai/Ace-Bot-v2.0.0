@@ -707,8 +707,8 @@ if (text.includes("placa"))
 	
 	if (messagesC.includes("/menu")){
 	client.updatePresence(from, Presence.composing)
-	reply("Obrigrado Por Ultilizar o Bot Meu Chapa , By Takamura")
 	tujuh = fs.readFileSync('./assets/eimane.mp3');
+	reply("Obrigrado Por Ultilizar o Bot Meu Chapa , By Takamura")
 	client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
     }
