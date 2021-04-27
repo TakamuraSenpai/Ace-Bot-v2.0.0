@@ -677,6 +677,12 @@ if (text.includes("placa"))
 			reply("vai vc, tu ja me disse q é mo bom")
 	}
 	
+		if (messagesC.includes("obotrespondeu?")){
+			client.updatePresence(from, Presence.composing)
+			reply("Nao Foi Fantasma Seu Corno , Bye")
+			
+	}
+	
 		if (messagesC.includes("vsfd")){
 			client.updatePresence(from, Presence.composing)
 			reply("bora juntos?")
@@ -684,13 +690,27 @@ if (text.includes("placa"))
 	
 		if (messagesC.includes("cadebot")){
 			client.updatePresence(from, Presence.composing)
-			reply("olha eu aqui carai")
+			reply("olha eu aqui carai , ta cego ?")
 	}
 	
-		if (messagesC.includes("bot")){
+		if (messagesC.includes("botcd")){
 			client.updatePresence(from, Presence.composing)
 			reply("roi, falando de mim?🥺❤️")
 	}
+
+	
+	if (messagesC.includes("botmorreu")){
+		client.updatePresence(from, Presence.composing)
+		reply("Achou Tinha Morrido , Otario")
+
+	}
+	
+	if (messagesC.includes("/menu")){
+	client.updatePresence(from, Presence.composing)
+	tujuh = fs.readFileSync('./assets/eimane.mp3');
+	client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+    }
 	
 			if (messagesC.includes("tobi")){
 			client.updatePresence(from, Presence.composing)
