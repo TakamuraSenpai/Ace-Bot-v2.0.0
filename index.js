@@ -772,11 +772,7 @@ if (text.includes("placa"))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 				case 'help':
-					case 'menu':
-						uptime = process.uptime ()
-						putagg = await getBuffer(`https://data.whicdn.com/images/124422293/original.gif`)
-						client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
-						break
+				case 'menu':
 				case 'nabuto':
 				case 'pika':
 					client.sendMessage(from, help(prefix), text)
