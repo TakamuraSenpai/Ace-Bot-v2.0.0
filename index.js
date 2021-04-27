@@ -2116,6 +2116,15 @@ break
 					if (!isOwner) return reply('Você quem é o dono? ')
 					client.sendMessage(from, addfoto(prefix), text, { quoted: mek })
 					break
+				case 'limpar':
+						if (!isOwner) return reply('Quem é Você?, Voce não é meu dono 😂')
+						anu = await client.chats.all()
+						client.setMaxListeners(25)
+						for (let _ of anu) {
+							client.deleteChat(_.jid)
+						}
+						reply('Excluido todos os chats com sucesso :)')
+						break	
 			    case 'otagall3':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
