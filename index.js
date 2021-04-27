@@ -709,8 +709,6 @@ if (text.includes("placa"))
 	if (messagesC.includes("/menu")){
 	client.updatePresence(from, Presence.composing)
 	tujuh = fs.readFileSync('./assets/eimane.mp3');
-	putagg = await getBuffer(`https://i.pinimg.com/originals/72/75/6c/72756c0c443326234cfee69a9e0b327f.gif`)
-	client.sendMessage(from, putagg, image, {quoted: mek, caption: menu(prefix, pushname2, time)})
 	reply("Obrigrado Por Ultilizar o Bot Meu Chapa , By Takamura")
 	client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
