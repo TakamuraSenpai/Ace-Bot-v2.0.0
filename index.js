@@ -1884,6 +1884,102 @@ case 'beat2':
 tujuh = fs.readFileSync('./assets/beat2.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
+case 'eletronica':
+tujuh = fs.readFileSync('./assets/eletronica.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica2':
+tujuh = fs.readFileSync('./assets/eletronica2.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica3':
+tujuh = fs.readFileSync('./assets/eletronica3.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica4':
+tujuh = fs.readFileSync('./assets/eletronica4.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica5':
+tujuh = fs.readFileSync('./assets/eletronica5.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica6':
+tujuh = fs.readFileSync('./assets/eletronica6.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica7':
+tujuh = fs.readFileSync('./assets/eletronica7.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica8':
+tujuh = fs.readFileSync('./assets/eletronica8.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica9':
+tujuh = fs.readFileSync('./assets/eletronica9.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'eletronica10':
+tujuh = fs.readFileSync('./assets/eletronica10.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao':
+tujuh = fs.readFileSync('./assets/japao.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao2':
+tujuh = fs.readFileSync('./assets/japao2.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao3':
+tujuh = fs.readFileSync('./assets/japao3.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao4':
+tujuh = fs.readFileSync('./assets/japao4.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao5':
+tujuh = fs.readFileSync('./assets/japao5.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao6':
+tujuh = fs.readFileSync('./assets/japao6.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao7':
+tujuh = fs.readFileSync('./assets/japao7.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao8':
+tujuh = fs.readFileSync('./assets/japao8.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao9':
+tujuh = fs.readFileSync('./assets/japao9.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao10':
+tujuh = fs.readFileSync('./assets/japao10.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao11':
+tujuh = fs.readFileSync('./assets/japao11.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao12':
+tujuh = fs.readFileSync('./assets/japao12.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao13':
+tujuh = fs.readFileSync('./assets/japao13.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'japao14':
+tujuh = fs.readFileSync('./assets/japao14.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 case 'gummy':
 tujuh = fs.readFileSync('./assets/fdp.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -3413,37 +3509,10 @@ break
 				    client.sendMessage(from, `*${anu.result.data}*`, text, {quoted: mek})
 				    await limitAdd(sender) 	
 				    break 
-				case 'porno':
-				    if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdU0UmT8RigE3Hbr80gmigjb2AdnPJklcQ3A&usqp=CAU`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/11/novinha-petuda-fotos-4.jpg`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWoYHFA_SDgUip6MtvimWRdub_lshAn5Edg&usqp=CAU`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvLmbqW9LeOCpXiGxgu3By4eQEmJM2Xp26Q&usqp=CAU`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/prima-novinha-pelada-6.jpg`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-5.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'comia facin'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'papai'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'opa, vou no banheiro tomar meu banho'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-6.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '🥴'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-7.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '😏'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-8.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'totosa'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-10.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'gasosa'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-16.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'garai ksksks'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ta olhando de mais'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'vai bater uma logo fdp kkkkkkk'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'gasosa'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'k'})
-					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
+					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
 					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
 					client.sendMessage(from, buffer, sticker, {quoted: mek, caption: 'slc'})
 					break
