@@ -901,6 +901,21 @@ if (text.includes("placa"))
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
+				  case 'steam':
+                    if (args.length < 1) return reply('Insira Titulo') 
+					costum('[❗] Processar...', text, tescuk, cr)
+                    anu = await fetchJson(`https://videfikri.com/api/steam/?username=${args[0]}`, {method: 'get'})
+                    anu1 = `➻ *NAMA* : ${anu.result.name}\n`
+                    anu1 += `➻ *USER* : ${anu.result.username}\n`
+                    anu1 += `➻ *COUNTRY* : ${anu.result.country}\n`
+                    anu1 += `➻ *IMG* : ${anu.result.image}\n`
+                    anu1 += `➻ *LEVEL* : ${anu.result.level}\n`
+                    anu1 += `➻ *FACEIT* : ${anu.result.faceit}\n`
+                    anu1 += `➻ *BADGES* : ${anu.result.badges}\n`
+                    anu1 += `➻ *MENTS* : ${anu.result.achievements}\n`
+                    anu1 += `➻ *ON* : ${anu.result.onkah}\n`
+                    nayla.sendMessage(from, anu1, text,{quoted: nay1})
+                    break 
 				   case 'pornopremium':
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, pornopremium(prefix), text, { quoted: mek })
