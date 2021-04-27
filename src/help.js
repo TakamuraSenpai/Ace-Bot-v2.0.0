@@ -34,12 +34,9 @@ Chame ele Em Caso De BUG ou Ideias Para BOT
 🔥 *${prefix}eletronica [1 a 10]*
 🔥 *${prefix}animecry*
 🔥 *${prefix}chentai [premium]*
-🔥 *${prefix}gcpf [premium]*
 🔥 *${prefix}gay [@]*
-🔥 *${prefix}gbin [premium]*
 🔥 *${prefix}pack [premium]*
 🔥 *${prefix}destrava [premium]*
-🔥 *${prefix}gpessoa [premium]*
 🔥 *${prefix}spamcall*
 🔥 *${prefix}play (nome da msc)*
 
@@ -159,8 +156,8 @@ Chame ele Em Caso De BUG ou Ideias Para BOT
 🔥 *${prefix}daftarvip [para virar Premium]*
 🔥 *${prefix}qrcode*
 🔥 *${prefix}chentai*
-🔥 *${prefix}gcpf*
-🔥 *${prefix}gbin*
+🔥 *${prefix}em breve*
+🔥 *${prefix}em breve*
 🔥 *${prefix}pack*
 🔥 *${prefix}destrava*
 🔥 *${prefix}gpessoa*
