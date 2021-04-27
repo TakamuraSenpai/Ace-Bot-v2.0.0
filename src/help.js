@@ -30,6 +30,8 @@ Chame ele Em Caso De BUG ou Ideias Para BOT
 
 ●ω●【𝗡𝗢𝗩𝗢𝗦】
 
+🔥 *${prefix}japan [1 a 14]*
+🔥 *${prefix}eletronica [1 a 10]*
 🔥 *${prefix}animecry*
 🔥 *${prefix}chentai [premium]*
 🔥 *${prefix}gcpf [premium]*
