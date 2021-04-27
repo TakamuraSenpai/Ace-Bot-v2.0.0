@@ -32,13 +32,16 @@ Chame ele Em Caso De BUG ou Ideias Para BOT
 
 🔥 *${prefix}japao [1 a 14]*
 🔥 *${prefix}eletronica [1 a 10]*
-🔥 *${prefix}animecry*
 🔥 *${prefix}chentai [premium]*
+🔥 *${prefix}pornopremium [premium 18+]*
 🔥 *${prefix}gay [@]*
-🔥 *${prefix}pack [premium]*
+🔥 *${prefix}packs [premium 18+]*
 🔥 *${prefix}destrava [premium]*
 🔥 *${prefix}spamcall*
 🔥 *${prefix}play (nome da msc)*
+🔥 *${prefix}em breve*
+🔥 *${prefix}em breve*
+🔥 *${prefix}em breve*
 
 ●ω●【𝗣𝗔𝗥𝗔 𝗚𝗥𝗨𝗣𝗢𝗦】
 
@@ -156,6 +159,7 @@ Chame ele Em Caso De BUG ou Ideias Para BOT
 🔥 *${prefix}daftarvip [para virar Premium]*
 🔥 *${prefix}qrcode*
 🔥 *${prefix}chentai*
+🔥 *${prefix}pornopremium [premium 18+]*
 🔥 *${prefix}em breve*
 🔥 *${prefix}em breve*
 🔥 *${prefix}pack*
