@@ -9,7 +9,7 @@ const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
-const { pack } = require('./src/pack')
+const { packs } = require('./src/packs')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
@@ -893,9 +893,9 @@ if (text.includes("placa"))
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
-                   case 'pack':
+                   case 'packs':
                     if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, pack(prefix), text, { quoted: mek })
+                    client.sendMessage(from, packs(prefix), text, { quoted: mek })
                     break
                    case 'chentai':
                     if (!isPremium) return reply(mess.only.premium)
