@@ -3,9 +3,9 @@ const pornopremium = () => {
 	
 	*ola👋👋* *MODO PUNHETAO ATIVADO CARALHO >:) 😌*
 
-Links Para Morrer Sosegado [----] (-------)
+Links Para Morrer Sosegado :D
 
-Modo Gampang :
+Modo Xvideos :
 • https://www.xvideos.com/video60355565/fudendo_gostoso_no_meio_dos_lencois_maranhenses_-_dread_hot
 • https://www.xvideos.com/video55168451/ele_fode_meu_cuzinho_ate_eu_gozar_-_dread_hot
 • https://www.xvideos.com/video51663587/sexo_com_morena_gostosa_termina_com_leitinho_na_boca_-_dread_hot
