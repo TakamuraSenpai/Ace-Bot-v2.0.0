@@ -902,8 +902,8 @@ if (text.includes("placa"))
                     client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
 				  case 'steam':
-                    if (args.length < 1) return reply('Insira Titulo') 
-					costum('[❗] Processar...', text, tescuk, cr)
+                    if (args.length < 1) return reply('Insira Nick Queres') 
+					costum('[❗] PROSES LOADING', text, tescuk, cr)
                     anu = await fetchJson(`https://videfikri.com/api/steam/?username=${args[0]}`, {method: 'get'})
                     anu1 = `➻ *NAMA* : ${anu.result.name}\n`
                     anu1 += `➻ *USER* : ${anu.result.username}\n`
@@ -924,17 +924,17 @@ if (text.includes("placa"))
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, gcpf(prefix), text, { quoted: mek })
                     break
-				case 'ytmp4':
-					if (args.length < 1) return reply('Cadê o url, hum?')
-					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					teks = `*Title* : ${anu.title}`
-					thumb = await getBuffer(anu.thumb)
-					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
-					break
+					case 'ytmp4':
+						if (args.length < 1) return reply('MASUKKAN LINK YT') 
+						costum('[❗] PROSES LOADING', text, tescuk, cr) 
+						anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/ytmp3?url=${body.slice(7)}`, {method: 'get'})
+						anu1 = await getBuffer(anu.thumb)
+						anu2 = `➻ *JUDUL* : ${anu.title}\n`
+						anu2 += `➻ *SIZE* : ${anu.filesize}\n`		           		 
+						anu3 = await getBuffer(anu.result)
+						nayla.sendMessage(from, anu1, image, {caption: anu2, quoted: nay1})
+						nayla.sendMessage(from, anu3, video, {mimetype: 'video/mp4', filename: `${anu.title}`, quoted: nay1})
+						break
 		case 'iri':
 			client.sendPtt(from, './lindy/iri.mp3', {quoted: mek, ptt:true})
 			break
