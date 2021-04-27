@@ -181,11 +181,7 @@ const getLevelingXp = (userId) => {
                 fs.writeFileSync('./database/json/limit.json', JSON.stringify(_limit))
             }
         }
-		const nay2 = {
-            key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "caption": `MAAF FITUR *${command}* TIDAK TERDAFTAR DIDALAM MENU`} } }            			
-		    const costum = (pesan, tipe, target, target2) => {
-			nayla.sendMessage(from, pesan, tipe, {quoted: { key: { fromMe: false, participant: `${target}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target2}` }}})
-			}
+
 
 function kyun(seconds){
   function pad(s){
