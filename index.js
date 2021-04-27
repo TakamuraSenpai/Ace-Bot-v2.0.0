@@ -900,6 +900,10 @@ if (text.includes("placa"))
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
+				   case 'pornopremium':
+                    if (!isPremium) return reply(mess.only.premium)
+                    client.sendMessage(from, pornopremium(prefix), text, { quoted: mek })
+                    break
                    case 'gcpf':
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, gcpf(prefix), text, { quoted: mek })
