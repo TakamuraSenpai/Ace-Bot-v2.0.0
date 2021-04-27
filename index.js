@@ -715,6 +715,7 @@ if (text.includes("placa"))
 			if (messagesC.includes("tobi")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/tobi.mp3');
+			reply("Opa Sou TObiiiiiiii")
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
