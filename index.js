@@ -981,12 +981,20 @@ if (text.includes("placa"))
 							}
 							reply(ini_txt)
 							break
-				case 'wallpaperpesquisa':
-								
-									if (args.length == 0) return reply(`Exemplo De Pesquisa: ${prefix + command} loli kawaii`)
+							case 'xhamstersearch':
+								if (!isPremium) return reply(mess.only.premium)
+									if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
 									query = args.join(" ")
-									ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/wallpaper?apikey=${lolhumankey}&query=${query}`)
-									client.sendMessage(from, ini_buffer, image, { quoted: mek })
+									get_result = await fetchJson(`http://api.lolhuman.xyz/api/xhamstersearch?apikey=${lolhumankey}&query=${query}`)
+									get_result = get_result.result
+									ini_txt = ""
+									for (var x of get_result) {
+										ini_txt += `Title : ${x.title}\n`
+										ini_txt += `Views : ${x.views}\n`
+										ini_txt += `Duration : ${x.duration}\n`
+										ini_txt += `Link : ${x.link}\n\n`
+									}
+									reply(ini_txt)
 									break				
 				case 'game':
 				
