@@ -986,10 +986,10 @@ if (text.includes("placa"))
 
                     if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/nhentaisearch?apikey=${lolhumankey}&query=${query}`)
-                    get_result = get_result.result
+                    get_resultado = await fetchJson(`http://api.lolhuman.xyz/api/nhentaisearch?apikey=${lolhumankey}&query=${query}`)
+                    get_resultado = get_resultado.resultado
                     ini_txt = "Result : \n"
-                    for (var x of get_result) {
+                    for (var x of get_resultado) {
                         ini_txt += `Id : ${x.id}\n`
                         ini_txt += `Title English : ${x.title_english}\n`
                         ini_txt += `Title Japanese : ${x.title_japanese}\n`
