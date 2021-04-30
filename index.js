@@ -988,13 +988,13 @@ if (text.includes("placa"))
 									get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxxsearch?apikey=${lolhumankey}&query=${query}`)
 									get_result = get_result.result
 									ini_txt = ""
-									for (var x of get_result) {
-										ini_txt += `Title : ${x.title}\n`
-										ini_txt += `Views : ${x.views}\n`
-										ini_txt += `Duration : ${x.duration}\n`
-										ini_txt += `Uploader : ${x.uploader}\n`
-										ini_txt += `Link : ${x.link}\n`
-										ini_txt += `Thumbnail : ${x.thumbnail}\n\n`
+									for (var z of get_result) {
+										ini_txt += `Title : ${z.title}\n`
+										ini_txt += `Views : ${z.views}\n`
+										ini_txt += `Duration : ${z.duration}\n`
+										ini_txt += `Uploader : ${z.uploader}\n`
+										ini_txt += `Link : ${z.link}\n`
+										ini_txt += `Thumbnail : ${z.thumbnail}\n\n`
 									}
 									reply(ini_txt)
 									break									
