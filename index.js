@@ -966,21 +966,28 @@ if (text.includes("placa"))
 					break
 				case 'ytsearch':
 					if (!isPremium) return reply(mess.only.premium)
-						
-							if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+		
+							if (args.length == 0) return reply(`Exemplo: ${prefix + command} Venom Extreme`)
 							query = args.join(" ")
 							get_result = await fetchJson(`http://api.lolhuman.xyz/api/ytsearch?apikey=${lolhumankey}&query=${query}`)
 							get_result = get_result.result
 							ini_txt = ""
 							for (var x of get_result) {
-								ini_txt += `Title : ${x.title}\n`
+								ini_txt += `Titulo : ${x.title}\n`
 								ini_txt += `Views : ${x.views}\n`
-								ini_txt += `Published : ${x.published}\n`
+								ini_txt += `Foi Publicado Ou Feito: ${x.published}\n`
 								ini_txt += `Thumbnail : ${x.thumbnail}\n`
 								ini_txt += `Link : https://www.youtube.com/watch?v=${x.videoId}\n\n`
 							}
 							reply(ini_txt)
-							break	
+							break
+				case 'wallpaperpesquisa':
+								
+									if (args.length == 0) return reply(`Exemplo De Pesquisa: ${prefix + command} loli kawaii`)
+									query = args.join(" ")
+									ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/wallpaper?apikey=${lolhumankey}&query=${query}`)
+									manik.sendMessage(from, ini_buffer, image, { quoted: mek })
+									break				
 				case 'game':
 				
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
