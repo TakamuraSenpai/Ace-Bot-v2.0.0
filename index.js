@@ -981,29 +981,22 @@ if (text.includes("placa"))
 							}
 							reply(ini_txt)
 							break
-				case 'xhamster':
-					if (!isPremium) return reply(mess.only.premium)
-
-									if (args.length == 0) return reply(`Example: ${prefix + command} https://xhamster.com/videos/party-with-friends-end-in-awesome-fucking-5798407`)
+							case 'xnxxsearch':
+								
+									if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
 									query = args.join(" ")
-									get_result = await fetchJson(`http://api.lolhuman.xyz/api/xhamster?apikey=${lolhumankey}&url=${query}`)
+									get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxxsearch?apikey=${lolhumankey}&query=${query}`)
 									get_result = get_result.result
-									ini_txt = `Title : ${get_result.title}\n`
-									ini_txt += `Duration : ${get_result.duration}\n`
-									ini_txt += `Uploader : ${get_result.author}\n`
-									ini_txt += `Upload : ${get_result.upload}\n`
-									ini_txt += `View : ${get_result.views}\n`
-									ini_txt += `Rating : ${get_result.rating}\n`
-									ini_txt += `Like : ${get_result.likes}\n`
-									ini_txt += `Dislike : ${get_result.dislikes}\n`
-									ini_txt += `Comment : ${get_result.comments}\n`
-									ini_txt += "Link : \n"
-									link = get_result.link
-									for (var x of link) {
-										ini_txt += `${x.type} - ${x.link}\n\n`
+									ini_txt = ""
+									for (var x of get_result) {
+										ini_txt += `Title : ${x.title}\n`
+										ini_txt += `Views : ${x.views}\n`
+										ini_txt += `Duration : ${x.duration}\n`
+										ini_txt += `Uploader : ${x.uploader}\n`
+										ini_txt += `Link : ${x.link}\n`
+										ini_txt += `Thumbnail : ${x.thumbnail}\n\n`
 									}
-									thumbnail = await getBuffer(get_result.thumbnail)
-									manik.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+									reply(ini_txt)
 									break									
 				case 'game':
 				
