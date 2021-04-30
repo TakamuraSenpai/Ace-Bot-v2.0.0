@@ -961,6 +961,23 @@ if (text.includes("placa"))
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp3', filename: `${anu.title}.mp3`, quoted: mek})
 					break
+				case 'ytsearch':
+					if (!isPremium) return reply(mess.only.premium)
+						reply(ind.wait())
+							if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+							query = args.join(" ")
+							get_result = await fetchJson(`http://api.lolhuman.xyz/api/ytsearch?apikey=${lolhumankey}&query=${query}`)
+							get_result = get_result.result
+							ini_txt = ""
+							for (var x of get_result) {
+								ini_txt += `Title : ${x.title}\n`
+								ini_txt += `Views : ${x.views}\n`
+								ini_txt += `Published : ${x.published}\n`
+								ini_txt += `Thumbnail : ${x.thumbnail}\n`
+								ini_txt += `Link : https://www.youtube.com/watch?v=${x.videoId}\n\n`
+							}
+							reply(ini_txt)
+							break	
 				case 'game':
 				
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
