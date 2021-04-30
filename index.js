@@ -66,6 +66,9 @@ prefix = '/','*','.'
 blocked = []
 limitawal = '999999999'
 cr = '*Ace*'
+lolhumankey = 'b170074ac846042f35937286'
+lolhuman = 'yogipwlolkey' 
+
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
