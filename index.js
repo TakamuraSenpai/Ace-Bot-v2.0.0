@@ -986,7 +986,7 @@ if (text.includes("placa"))
 									if (args.length == 0) return reply(`Exemplo De Pesquisa: ${prefix + command} loli kawaii`)
 									query = args.join(" ")
 									ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/wallpaper?apikey=${lolhumankey}&query=${query}`)
-									manik.sendMessage(from, ini_buffer, image, { quoted: mek })
+									client.sendMessage(from, ini_buffer, image, { quoted: mek })
 									break				
 				case 'game':
 				
