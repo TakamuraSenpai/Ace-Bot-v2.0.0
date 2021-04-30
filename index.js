@@ -995,7 +995,17 @@ if (text.includes("placa"))
 										ini_txt += `Link : ${x.link}\n\n`
 									}
 									reply(ini_txt)
-									break				
+									break
+									case 'listsurah':
+										if (!isPremium) return reply(mess.only.premium)
+											get_result = await fetchJson(`http://api.lolhuman.xyz/api/quran?apikey=${lolhumankey}`)
+											get_result = get_result.result
+											ini_txt = 'List Surah:\n'
+											for (var x in get_result) {
+												ini_txt += `${x}. ${get_result[x]}\n`
+											}
+											reply(ini_txt)
+											break						
 				case 'game':
 				
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
