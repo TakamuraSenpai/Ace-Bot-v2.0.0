@@ -981,23 +981,25 @@ if (text.includes("placa"))
 							}
 							reply(ini_txt)
 							break
-							case 'xnxxsearch':
-								
-									if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
-									query = args.join(" ")
-									get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxxsearch?apikey=${lolhumankey}&query=${query}`)
-									get_result = get_result.result
-									ini_txt = ""
-									for (var z of get_result) {
-										ini_txt += `Title : ${z.title}\n`
-										ini_txt += `Views : ${z.views}\n`
-										ini_txt += `Duration : ${z.duration}\n`
-										ini_txt += `Uploader : ${z.uploader}\n`
-										ini_txt += `Link : ${z.link}\n`
-										ini_txt += `Thumbnail : ${z.thumbnail}\n\n`
-									}
-									reply(ini_txt)
-									break									
+							case 'nhentaisearch':
+								if (!isPremium) return reply(mess.only.premium)
+
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/nhentaisearch?apikey=${lolhumankey}&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = "Result : \n"
+                    for (var x of get_result) {
+                        ini_txt += `Id : ${x.id}\n`
+                        ini_txt += `Title English : ${x.title_english}\n`
+                        ini_txt += `Title Japanese : ${x.title_japanese}\n`
+                        ini_txt += `Native : ${x.title_native}\n`
+                        ini_txt += `Upload : ${x.date_upload}\n`
+                        ini_txt += `Page : ${x.page}\n`
+                        ini_txt += `Favourite : ${x.favourite}\n\n`
+                    }
+                    reply(ini_txt)
+                    break									
 				case 'game':
 				
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
