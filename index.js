@@ -1000,6 +1000,7 @@ if (text.includes("placa"))
 										if (!isPremium) return reply(mess.only.premium)
 											get_result = await fetchJson(`http://api.lolhuman.xyz/api/quran?apikey=${lolhumankey}`)
 											get_result = get_result.result
+											ini_txt = ""
 											ini_txt = 'List Surah:\n'
 											for (var x in get_result) {
 												ini_txt += `${x}. ${get_result[x]}\n`
